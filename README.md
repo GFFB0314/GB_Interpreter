@@ -77,22 +77,16 @@ You will also need `pip` to install the testing library.
     *   `Interpreter/`: Contains the core logic for the lexer, parser, evaluator, etc.
     *   `tests/`: Contains all the unit tests.
 
-3.  **Install development dependencies:**
-    For running the tests, you'll need `pytest`. It's recommended to create a `requirements.txt` file.
-
-    Create a file named `requirements.txt` and add the following line:
-    ```
-    pytest
-    ```
-    Then, install it:
-    ```sh
+3.  **Install the Required Libraries**
+    Install the dependencies using `pip`:
+    ```bash
     pip install -r requirements.txt
     ```
 
 4.  **Run the tests (Optional but Recommended):**
-    Verify that everything is set up correctly by running the test suite.
-    ```sh
-    python -m pytest
+    Verify that everything is set up correctly by running the test suite in the root directory.
+    ```bash
+    python -m pytest tests/
     ```
     You should see all 29 tests pass! ✅
 
