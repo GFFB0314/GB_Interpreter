@@ -30,10 +30,10 @@ class Parser:
             raise SyntaxError(
                 f"Unexpected end of input, expected {expected_type or ''} {expected_value or ''}"
             )
-        if expected_type and token.type != expected_type:
-            raise SyntaxError(f"Expected type '{expected_type}', got '{token.type}'")
         if expected_value and token.value != expected_value:
             raise SyntaxError(f"Expected '{expected_value}', got '{token.value}'")
+        if expected_type and token.type != expected_type:
+            raise SyntaxError(f"Expected type '{expected_type}', got '{token.type}'")
         self.pos += 1
         return token
 
